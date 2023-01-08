@@ -1,0 +1,143 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #06edde
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  height: 50rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 5rem;
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+.temp input {
+  font-size: 1rem;
+  border: 3px solid black;
+
+  text-align: center;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  height: 2rem;
+}
+.temp button {
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 11rem;
+  border-radius: 2rem;
+
+  position: absolute;
+  margin-top: 8rem;
+}
+.temp button:hover {
+  background-color: rgb(57, 136, 116);
+}
+#up {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#down {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+select {
+  font-family: "Times New Roman", Times, serif;
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  select {
+    height: 2rem;
+    width: 12rem;
+    margin: 1rem;
+  }
+  #up {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .temp input {
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 1.5rem;
+    width: 11rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  #up {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    padding-top: 1rem;
+
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .temp button {
+    font-size: 1.1rem;
+    height: 2.5rem;
+    width: 9rem;
+
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .temp input {
+    border-bottom-right-radius: 0.9rem;
+    border-top-left-radius: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #up {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  section {
+    height: 100vh;
+    width: 100vw;
+    margin-right: 0rem;
+  }
+}
